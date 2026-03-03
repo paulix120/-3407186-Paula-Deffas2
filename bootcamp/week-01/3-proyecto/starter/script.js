@@ -1,76 +1,117 @@
 /*
- * script.js — Mi Presentación
+ * script.js — Ficha de Presentación de Dominio
  *
  * Semana 1: ¿Qué es programar? Mi primer JavaScript
  * Bootcamp JavaScript ES2023
  *
- * Instrucciones:
- * 1. Reemplaza [TU NOMBRE], [TU CIUDAD], etc. con tu información real
- * 2. Completa cada TODO
- * 3. Ejecuta con: node starter/script.js
+ * ============================================
+ * POLÍTICA ANTICOPIA
+ * ============================================
+ * Cada aprendiz trabaja sobre un DOMINIO ÚNICO asignado por el instructor.
+ * Adapta TODOS los TODOs a tu dominio específico.
+ * Copiar la implementación de otro compañero resulta en calificación de cero.
+ *
+ * INSTRUCCIONES:
+ * 1. Confirma con tu instructor cuál es tu dominio asignado
+ * 2. Reemplaza cada [PLACEHOLDER] con la información de TU dominio
+ * 3. Completa cada TODO adaptado a tu contexto
+ * 4. Ejecuta con: node starter/script.js
+ *
+ * NOTA SOBRE LOS EJEMPLOS:
+ * Los comentarios de ayuda usan "Planetario" como dominio de ejemplo
+ * porque NO es un dominio asignable. No copies esos valores —
+ * crea los tuyos basados en tu dominio asignado.
  */
 
 // ============================================
-// ENCABEZADO — título de la presentación
+// ENCABEZADO — identifica el dominio y la entidad
 // ============================================
 
-// TODO: Cambia el año si es diferente
+// TODO: Cambia el título con el nombre de tu dominio y un identificador
+// Ejemplo (Planetario): '    PLANETARIO MUNICIPAL - FICHA #001    '
 console.log('=========================================');
-console.log('         MI PRESENTACIÓN - 2026         ');
+console.log('[TU DOMINIO] - FICHA DE PRESENTACIÓN');
 console.log('=========================================');
 console.log('');
 
 // ============================================
-// DATOS PERSONALES
+// INFORMACIÓN GENERAL
 // ============================================
 
-// Sección de datos personales básicos
-console.log('DATOS PERSONALES');
-console.log('------------------');
+// Datos básicos que identifican la entidad principal del dominio
+console.log('INFORMACIÓN GENERAL');
+console.log('--------------------');
 
-// TODO: Reemplaza con tu nombre completo (string)
-console.log('Nombre:  [TU NOMBRE COMPLETO]');
+// TODO: Reemplaza con el nombre de tu entidad principal (string — con comillas)
+// Ejemplos según dominio:
+//   Farmacia    → nombre del medicamento:  'Ibuprofeno 400mg'
+//   Gimnasio    → nombre de la rutina:     'Rutina Full Body'
+//   Restaurante → nombre del platillo:     'Lasaña Boloñesa'
+//   Biblioteca  → título del libro:        'El Principito'
+console.log('Nombre:          [NOMBRE DE LA ENTIDAD]');
 
-// TODO: Reemplaza con tu ciudad y país (string)
-console.log('Ciudad:  [TU CIUDAD], [TU PAÍS]');
+// TODO: Reemplaza con un código o identificador único (string o number)
+// Ejemplos: 'LIB-042', 'MED-117', 452
+console.log('Código:          [CÓDIGO O ID]');
 
-// TODO: Reemplaza con tu edad real (number — sin comillas)
-console.log('Edad:    [TU EDAD]');
+// TODO: Reemplaza con la categoría o tipo de la entidad (string)
+// Ejemplos: 'Novela - Ficción', 'Antiinflamatorio', 'Ejercicio cardiovascular'
+console.log('Categoría:       [CATEGORÍA O TIPO]');
+
+// TODO: Indica el estado actual de la entidad (string)
+// Ejemplos: 'Disponible', 'En stock', 'Activo', 'Ocupado'
+console.log('Estado:          [ESTADO ACTUAL]');
 
 console.log('');
 
 // ============================================
-// MIS INTERESES
+// DETALLES — datos numéricos y booleanos
 // ============================================
 
-// Lo que me gusta hacer y mis motivaciones
-console.log('MIS INTERESES');
-console.log('------------------');
+// Propiedades específicas con valores numéricos y booleanos
+console.log('DETALLES');
+console.log('--------------------');
 
-// TODO: Escribe al menos una afición o hobby (string)
-console.log('Afición: [TU AFICIÓN O HOBBY]');
+// TODO: Reemplaza con un dato numérico relevante para tu dominio (number — sin comillas)
+// Ejemplos: precio → 15000, stock → 48, páginas → 320, capacidad → 30
+console.log('Valor principal:    [NÚMERO SIN COMILLAS]');
 
-// TODO: Escribe en una frase por qué estudias programación (string)
-console.log('Por qué programo: [TU RAZÓN]');
+// TODO: Reemplaza el 0 por una expresión aritmética que se calcule automáticamente
+// No uses variables — escribe directamente el cálculo con números literales
+// Ejemplos:
+//   Precio con 20% descuento:  15000 * 0.8
+//   Total (cantidad × precio): 3 * 15000
+//   Capacidad restante:        30 - 12
+console.log('Valor calculado:    ', 0); // TODO: reemplaza 0 con tu cálculo
+
+// TODO: Valor boolean que representa un estado de la entidad (true o false — sin comillas)
+// Ejemplos: disponible → true, enStock → false, esNuevo → true
+console.log('Estado booleano 1:  [true o false]');
+
+// TODO: Otro valor boolean diferente al anterior (true o false — sin comillas)
+console.log('Estado booleano 2:  [true o false]');
 
 console.log('');
 
 // ============================================
-// MI CAMINO EN PROGRAMACIÓN
+// RESUMEN DEL DOMINIO
 // ============================================
 
-// Información sobre mi punto de partida en programación
-console.log('MI CAMINO EN PROGRAMACIÓN');
-console.log('------------------');
+// Visión general del dominio como sistema, no de una sola entidad
+console.log('RESUMEN DEL DOMINIO');
+console.log('--------------------');
 
-// TODO: Escribe el año en que empiezas (number — sin comillas)
-console.log('Año de inicio:       [AÑO]');
+// TODO: Escribe el nombre de tu dominio asignado (string)
+// Ejemplos: 'Biblioteca', 'Farmacia', 'Gimnasio'
+console.log('Dominio:          [TU DOMINIO ASIGNADO]');
 
-// TODO: ¿Tienes experiencia previa en programación? (boolean: true o false)
-console.log('Experiencia previa:  [true o false]');
+// TODO: ¿Cómo se llama la entidad principal de tu dominio? (string)
+// Ejemplos: 'libro', 'medicamento', 'platillo', 'miembro', 'cuenta'
+console.log('Entidad:          [TIPO DE ENTIDAD]');
 
-// TODO: ¿Estás comprometido con el proceso de aprendizaje? (boolean)
-console.log('Comprometido/a:      [true o false]');
+// TODO: ¿Cuántos registros tiene tu dominio en total? (number — sin comillas)
+// Puede ser un número inventado pero coherente con el dominio
+console.log('Total registros:  [NÚMERO TOTAL]');
 
 console.log('');
 
@@ -78,8 +119,12 @@ console.log('');
 // CIERRE
 // ============================================
 
-// Mensaje final de cierre
+// Mensaje final del script
 console.log('=========================================');
-// TODO: Cambia el mensaje de cierre con algo personal tuyo
-console.log('   [UN MENSAJE TUYO AL TERMINAR]        ');
+
+// TODO: Escribe un mensaje de cierre relacionado con tu dominio (string)
+// Ejemplo (Planetario): '  ¡Explora el universo con JavaScript!'
+console.log('[MENSAJE DE CIERRE DE TU DOMINIO]');
+
 console.log('=========================================');
+

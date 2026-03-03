@@ -3,12 +3,13 @@
 # ============================================
 
 # ============================================
-# Soluciones de Ejercicios y Proyectos
+# Soluciones de Proyectos (NO publicar)
 # ============================================
-# Las soluciones no se suben al repo público
-# Los estudiantes deben resolver por su cuenta
-**/solution/
-**/solutions/
+# Las soluciones de los PROYECTOS semanales (3-proyecto/) no se suben al repo.
+# Los estudiantes deben completar el proyecto por su cuenta.
+# Las soluciones de EJERCICIOS (2-practicas/) SÍ están en el repo (son tutoriales).
+**/3-proyecto/solution/
+**/3-proyecto/solutions/
 
 # ============================================
 # Node.js
@@ -204,9 +205,10 @@ temp/
 # Archivos del Bootcamp
 # ============================================
 
-# Soluciones de proyectos y prácticas (NO publicar en GitHub)
-# Los estudiantes deben completar los ejercicios por sí mismos
-**/solution/
+# Soluciones de proyectos (NO publicar en GitHub)
+# Los estudiantes deben completar los proyectos por sí mismos.
+# Nota: las soluciones de ejercicios (2-practicas/) SÍ están en el repo.
+**/3-proyecto/solution/
 **/*-solution.js
 
 # Soluciones de estudiantes (cada estudiante debe tener su propio repo)

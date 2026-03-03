@@ -4,8 +4,8 @@
 
 <p align="center">
   <a href="https://github.com/ergrato-dev/bc-javascript-es2023/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT"></a>
-  <a href="#"><img src="https://img.shields.io/badge/semanas-28-yellow.svg" alt="28 Semanas"></a>
-  <a href="#"><img src="https://img.shields.io/badge/horas-224-orange.svg" alt="224 Horas"></a>
+  <a href="#"><img src="https://img.shields.io/badge/semanas-34-yellow.svg" alt="34 Semanas"></a>
+  <a href="#"><img src="https://img.shields.io/badge/horas-272-orange.svg" alt="272 Horas"></a>
   <a href="#"><img src="https://img.shields.io/badge/JavaScript-ES2023-F7DF1E?logo=javascript" alt="JavaScript ES2023"></a>
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" alt="PRs Welcome"></a>
 </p>
@@ -18,7 +18,9 @@
 
 ## 📋 Descripción
 
-Bootcamp intensivo de **28 semanas (7 meses)** enfocado en el dominio de JavaScript moderno (ES2023). Diseñado para llevar a estudiantes de cero a desarrollador JavaScript Junior, con énfasis en código limpio, mejores prácticas y proyectos del mundo real.
+Bootcamp intensivo de **34 semanas (~8.5 meses)** enfocado en el dominio de JavaScript moderno (ES2023). Diseñado para llevar a estudiantes de cero a desarrollador JavaScript Junior, con énfasis en código limpio, mejores prácticas y proyectos del mundo real.
+
+> 🏛️ **Política de Dominios Únicos (Anticopia)**: Cada aprendiz trabaja sobre un dominio de negocio único asignado por el instructor (Biblioteca, Farmacia, Gimnasio, etc.). Esto garantiza implementaciones originales y previene la copia entre compañeros.
 
 ### 🎯 Objetivos
 
@@ -43,13 +45,13 @@ Este bootcamp se enfoca exclusivamente en JavaScript ES2023 y características m
 
 ## 🗓️ Estructura del Bootcamp
 
-|          Etapa           | Semanas | Horas | Temas Principales                      |
-| :----------------------: | :-----: | :---: | -------------------------------------- |
-| **Fundamentos Modernos** |  1-12   |  96h  | ES2023, Módulos, Arrays/Objetos modernos |
-|      **Intermedio**      |  13-24  |  96h  | Async, Fetch API, DOM, Storage         |
-|       **Avanzado**       |  25-28  |  32h  | Testing, Patrones, Clean Code          |
+|                   Etapa                   | Semanas | Horas | Temas Principales                                                                  |
+| :---------------------------------------: | :-----: | :---: | ---------------------------------------------------------------------------------- |
+| **Etapa 0** — Fundamentos de Programación |  1–10   |  80h  | console.log, tipos, variables, condicionales, bucles, funciones, arrays, objetos   |
+|     **Etapa 1** — Fundamentos ES2023      |  11–22  |  96h  | Destructuring, clases, módulos ES, métodos modernos de array, Proxies, Generadores |
+|    **Etapa 2** — Intermedio + Avanzado    |  23–34  |  96h  | Async/Await, Fetch API, DOM, Testing con Jest, Patrones de diseño, Clean Code      |
 
-**Total: 28 semanas** | **224 horas** de formación intensiva
+**Total: 34 semanas** | **~272 horas** de formación intensiva
 
 ---
 
@@ -83,14 +85,14 @@ bootcamp/week-XX/
 
 ## 🛠️ Stack Tecnológico
 
-| Tecnología  | Versión        | Uso                         |
-| ----------- | -------------- | --------------------------- |
-| JavaScript  | ES2023 | Lenguaje principal          |
-| Jest        | 29+            | Testing y TDD               |
-| ESLint      | 8+             | Linting y calidad de código |
-| Prettier    | 3+             | Formateo de código          |
-| Live Server | -              | Desarrollo local            |
-| Git         | 2.30+          | Control de versiones        |
+| Tecnología  | Versión | Uso                         |
+| ----------- | ------- | --------------------------- |
+| JavaScript  | ES2023  | Lenguaje principal          |
+| Jest        | 29+     | Testing y TDD               |
+| ESLint      | 8+      | Linting y calidad de código |
+| Prettier    | 3+      | Formateo de código          |
+| Live Server | -       | Desarrollo local            |
+| Git         | 2.30+   | Control de versiones        |
 
 **Gestores de paquetes**: `pnpm` o `yarn` (❌ NO usar npm)
 
@@ -108,8 +110,8 @@ bootcamp/week-XX/
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone https://github.com/epti-dev/bc-javascript-es2023.git
-cd bc-javascript-es2023
+git clone https://github.com/ergrato-dev/bc-javascript-es2023-cf.git
+cd bc-javascript-es2023-cf
 ```
 
 ### 2. Instalar Extensiones de VS Code
@@ -190,8 +192,8 @@ Cada semana incluye tres tipos de evidencias:
 ## 📞 Soporte
 
 - 📧 Email: [tu-email@ejemplo.com](mailto:tu-email@ejemplo.com)
-- 💬 Discussions: [GitHub Discussions](https://github.com/epti-dev/bc-javascript-es2023/discussions)
-- 🐛 Issues: [GitHub Issues](https://github.com/epti-dev/bc-javascript-es2023/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/ergrato-dev/bc-javascript-es2023-cf/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/ergrato-dev/bc-javascript-es2023-cf/issues)
 
 ---
 
@@ -222,13 +224,13 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 <p align="center">
   <strong>🎓 Bootcamp JavaScript Moderno (ES2023)</strong><br>
-  <em>De cero a desarrollador JavaScript Junior en 7 meses</em>
+  <em>De cero a desarrollador JavaScript Junior en ~8.5 meses</em>
 </p>
 
 <p align="center">
   <a href="bootcamp/week-01">Comenzar Semana 1</a> •
   <a href="_docs">Ver Documentación</a> •
-  <a href="../../issues">Reportar Issue</a> •
+  <a href="https://github.com/ergrato-dev/bc-javascript-es2023-cf/issues">Reportar Issue</a> •
   <a href="CONTRIBUTING.md">Contribuir</a>
 </p>
 
