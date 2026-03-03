@@ -9,6 +9,10 @@
 
 ---
 
+![console.log() y comentarios](../0-assets/04-console-log-comentarios.svg)
+
+---
+
 ## 1. console.log() — Tu ventana al programa
 
 Cuando un programa se está ejecutando, necesitas una forma de ver qué está pasando internamente. `console.log()` es esa ventana.

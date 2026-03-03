@@ -8,6 +8,10 @@
 
 ---
 
+![¿Dónde vive JavaScript?](../0-assets/02-donde-vive-javascript.svg)
+
+---
+
 ## 1. ¿Qué es JavaScript?
 
 JavaScript es un lenguaje de programación creado en 1995. Su misión original era hacer que las páginas web pudieran **reaccionar** a las acciones del usuario: un clic, un movimiento del mouse, un formulario enviado.

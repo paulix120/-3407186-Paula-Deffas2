@@ -9,6 +9,10 @@
 
 ---
 
+![Ciclo Entrada → Proceso → Salida](../0-assets/01-ciclo-entrada-proceso-salida.svg)
+
+---
+
 ## 1. ¿Qué hace una computadora?
 
 Una computadora es extraordinariamente rápida y extraordinariamente obediente.

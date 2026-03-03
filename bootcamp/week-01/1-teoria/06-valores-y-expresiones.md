@@ -8,6 +8,10 @@
 
 ---
 
+![Valores literales vs expresiones](../0-assets/06-valores-expresiones.svg)
+
+---
+
 ## 1. ¿Qué es un valor literal?
 
 Un **valor literal** es un dato escrito directamente en el código, tal cual. No se calcula, no depende de nada: ahí está, escrito.

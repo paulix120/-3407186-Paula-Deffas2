@@ -9,6 +9,10 @@
 
 ---
 
+![Tipos de datos primitivos en JavaScript](../0-assets/05-tipos-primitivos.svg)
+
+---
+
 ## 1. ¿Qué es un tipo de dato?
 
 Los programas trabajan con datos. Pero no todos los datos son iguales:

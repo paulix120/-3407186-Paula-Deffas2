@@ -9,6 +9,10 @@
 
 ---
 
+![Entorno de desarrollo: VS Code + Node.js + Terminal](../0-assets/03-entorno-desarrollo.svg)
+
+---
+
 ## 1. VS Code — Tu editor de código
 
 Visual Studio Code (VS Code) es el editor más popular para JavaScript. Es gratuito, rápido y tiene miles de extensiones.
