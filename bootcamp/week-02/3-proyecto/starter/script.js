@@ -12,8 +12,8 @@
 //    única y coherente con tu dominio asignado.
 //    Implementaciones copiadas serán detectadas.
 //
-// Ejemplos de dominio: Biblioteca, Farmacia, Gimnasio,
-// Restaurante, Banco, Hospital, Hotel, Cine, y más.
+// Adapta cada TODO al contexto de tu dominio asignado.
+// Los ejemplos en este archivo usan dominios NO asignables.
 // ============================================
 
 // ============================================
@@ -24,39 +24,39 @@
 const DOMAIN_NAME = "Mi Dominio";
 
 // TODO: Cambia "Nombre del elemento" por algo de tu dominio
-// Ejemplos:
-//   Biblioteca → "El Quijote"
-//   Farmacia   → "Ibuprofeno 400mg"
-//   Gimnasio   → "Plan Mensual Premium"
+// Ejemplos con dominios no asignables:
+//   Planetario → "Sistema Solar en 3D"
+//   Acuario    → "Tiburón Ballena"
+//   Museo      → "La Gioconda (réplica)"
 const itemName = "Nombre del elemento";
 
 // TODO: Agrega una categoría, tipo o descripción corta (string)
-// Ejemplos:
-//   Biblioteca → genre = "Novela clásica"
-//   Farmacia   → category = "Analgésico"
-//   Gimnasio   → planType = "Premium"
+// Ejemplos con dominios no asignables:
+//   Planetario → showType = "Función inmersiva"
+//   Acuario    → habitat = "Océano Pacífico"
+//   Museo      → artStyle = "Renacimiento"
 const itemCategory = "Categoría del elemento";
 
 // TODO: Agrega un número relevante a tu dominio (integer o decimal)
-// Ejemplos:
-//   Biblioteca → totalPages = 863
-//   Farmacia   → pricePerUnit = 15_500
-//   Gimnasio   → monthlyFee = 89_900
+// Ejemplos con dominios no asignables:
+//   Planetario → capacity = 250
+//   Acuario    → tankVolume = 2_500_000
+//   Museo      → estimatedValue = 4_800_000
 const itemQuantity = 0; // reemplaza 0 con el número adecuado
 
 // TODO: Agrega un boolean con prefijo semántico (is/has/can/should)
-// Ejemplos:
-//   Biblioteca → isAvailable = true
-//   Farmacia   → requiresPrescription = false
-//   Gimnasio   → isActive = true
+// Ejemplos con dominios no asignables:
+//   Planetario  → isOpen = true
+//   Acuario     → isEndangered = false
+//   Museo       → isOnDisplay = true
 const isItemAvailable = false; // reemplaza con algo de tu dominio
 
 // TODO: Declara un valor null que signifique "no asignado aún"
 // en tu dominio
-// Ejemplos:
-//   Biblioteca → currentBorrower = null
-//   Farmacia   → expirationDate = null
-//   Gimnasio   → assignedTrainer = null
+// Ejemplos con dominios no asignables:
+//   Planetario → currentGuide = null
+//   Acuario    → feedingSchedule = null
+//   Museo      → currentOwner = null
 const pendingValue = null; // cambia el nombre a algo de tu dominio
 
 

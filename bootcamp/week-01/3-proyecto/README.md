@@ -22,7 +22,7 @@ No necesitas variables todavía (esas llegan la semana próxima). Solo `console.
 
 ## 📋 Descripción
 
-Vas a construir un "carnet digital de consola" para tu dominio asignado. El script debe mostrar información organizada sobre **una entidad principal de tu dominio**: libro, medicamento, miembro del gimnasio, plato de menú, cuenta bancaria, etc.
+Vas a construir un "carnet digital de consola" para tu dominio asignado. El script debe mostrar información organizada sobre **una entidad principal de tu dominio**: exhibición, especie marina, obra de arte, animal, evento astronómico, etc.
 
 Adapta cada sección al contexto de tu dominio. Si no sabes cuál es tu dominio, pregunta a tu instructor.
 
@@ -93,14 +93,14 @@ Total registros: 12
 
 ## 💡 Ejemplos de Adaptación por Dominio
 
-| Si tu dominio es... | Tu entidad principal es...   | Datos numéricos relevantes           |
-| ------------------- | ---------------------------- | ------------------------------------ |
-| Biblioteca          | Libro                        | páginas, año publicación, ejemplares |
-| Farmacia            | Medicamento                  | precio, stock, dosis                 |
-| Gimnasio            | Miembro o rutina             | días, repeticiones, peso             |
-| Restaurante         | Platillo                     | precio, calorías, tiempo preparación |
-| Banco               | Cuenta o producto financiero | saldo, tasa, plazo                   |
-| Hospital            | Paciente o servicio médico   | habitación, duración, costo          |
+| Si tu dominio es... | Tu entidad principal es... | Datos numéricos relevantes            |
+| ------------------- | -------------------------- | ------------------------------------- |
+| Planetario          | Exhibición                 | capacidad, duración, asistentes       |
+| Acuario             | Especie marina             | ejemplares, tamaño, temperatura       |
+| Museo               | Obra o artefacto           | valor estimado, año de creación, sala |
+| Zoológico           | Animal o especie           | ejemplares, peso, edad                |
+| Observatorio        | Evento astronómico         | duración, distancia, magnitud         |
+| Archivo Histórico   | Documento                  | páginas, año, categoría               |
 
 ---
 

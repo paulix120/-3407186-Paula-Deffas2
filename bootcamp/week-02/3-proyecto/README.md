@@ -16,10 +16,6 @@ Crear una ficha de datos en consola usando las variables y tipos aprendidos esta
 
 > ⚠️ **Política anticopia**: Cada aprendiz trabaja sobre un dominio diferente. Las implementaciones deben ser coherentes con tu dominio asignado. Se verificará que el código no sea copia de otro aprendiz.
 
-### Dominios únicos disponibles
-
-Biblioteca · Farmacia · Gimnasio · Escuela · Tienda de mascotas · Restaurante · Banco · Agencia de taxis · Hospital · Cine · Hotel · Agencia de viajes · Concesionario de autos · Tienda de ropa · Taller mecánico · y más…
-
 ---
 
 ## 📦 Estructura del proyecto
@@ -102,13 +98,13 @@ FIN DE FICHA
 
 ## 💡 Ejemplos de adaptación por dominio
 
-| Dominio     | Variable `string` | Variable `number` | Boolean                | Valor `null`      |
-| ----------- | ----------------- | ----------------- | ---------------------- | ----------------- |
-| Biblioteca  | `bookTitle`       | `totalPages`      | `isAvailable`          | `currentBorrower` |
-| Farmacia    | `medicineName`    | `stockQuantity`   | `requiresPrescription` | `expirationDate`  |
-| Gimnasio    | `memberName`      | `monthlyFee`      | `isActive`             | `assignedTrainer` |
-| Restaurante | `dishName`        | `price`           | `isVegetarian`         | `dailySpecial`    |
-| Hospital    | `patientName`     | `roomNumber`      | `isAdmitted`           | `assignedDoctor`  |
+| Dominio      | Variable `string` | Variable `number` | Boolean         | Valor `null`      |
+| ------------ | ----------------- | ----------------- | --------------- | ----------------- |
+| Planetario   | `exhibitionName`  | `capacity`        | `isOpen`        | `currentGuide`    |
+| Acuario      | `speciesName`     | `tankVolume`      | `isEndangered`  | `feedingSchedule` |
+| Museo        | `artworkTitle`    | `estimatedValue`  | `isOnDisplay`   | `currentOwner`    |
+| Zoológico    | `animalName`      | `weightKg`        | `isInEnclosure` | `veterinarian`    |
+| Observatorio | `eventName`       | `durationMinutes` | `isVisible`     | `nextObservation` |
 
 ---
 

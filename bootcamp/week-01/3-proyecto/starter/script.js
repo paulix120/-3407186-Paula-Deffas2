@@ -43,19 +43,19 @@ console.log('INFORMACIÓN GENERAL');
 console.log('--------------------');
 
 // TODO: Reemplaza con el nombre de tu entidad principal (string — con comillas)
-// Ejemplos según dominio:
-//   Farmacia    → nombre del medicamento:  'Ibuprofeno 400mg'
-//   Gimnasio    → nombre de la rutina:     'Rutina Full Body'
-//   Restaurante → nombre del platillo:     'Lasaña Boloñesa'
-//   Biblioteca  → título del libro:        'El Principito'
+// Ejemplos con dominios no asignables:
+//   Planetario  → nombre de la exhibición: 'Sistema Solar en 3D'
+//   Acuario     → nombre de la especie:    'Tiburón Ballena'
+//   Museo       → título de la obra:       'La Gioconda (réplica)'
+//   Zoológico   → nombre del animal:       'León Africano'
 console.log('Nombre:          [NOMBRE DE LA ENTIDAD]');
 
 // TODO: Reemplaza con un código o identificador único (string o number)
-// Ejemplos: 'LIB-042', 'MED-117', 452
+// Ejemplos: 'PLN-042', 'ACU-117', 'MUS-007', 452
 console.log('Código:          [CÓDIGO O ID]');
 
 // TODO: Reemplaza con la categoría o tipo de la entidad (string)
-// Ejemplos: 'Novela - Ficción', 'Antiinflamatorio', 'Ejercicio cardiovascular'
+// Ejemplos: 'Astronomía - Nivel básico', 'Pez cartilaginoso', 'Arte renacentista'
 console.log('Categoría:       [CATEGORÍA O TIPO]');
 
 // TODO: Indica el estado actual de la entidad (string)
@@ -102,11 +102,11 @@ console.log('RESUMEN DEL DOMINIO');
 console.log('--------------------');
 
 // TODO: Escribe el nombre de tu dominio asignado (string)
-// Ejemplos: 'Biblioteca', 'Farmacia', 'Gimnasio'
+// Ejemplos: 'Planetario', 'Acuario', 'Museo', 'Zoológico'
 console.log('Dominio:          [TU DOMINIO ASIGNADO]');
 
 // TODO: ¿Cómo se llama la entidad principal de tu dominio? (string)
-// Ejemplos: 'libro', 'medicamento', 'platillo', 'miembro', 'cuenta'
+// Ejemplos: 'exhibición', 'especie', 'obra', 'animal', 'evento'
 console.log('Entidad:          [TIPO DE ENTIDAD]');
 
 // TODO: ¿Cuántos registros tiene tu dominio en total? (number — sin comillas)
