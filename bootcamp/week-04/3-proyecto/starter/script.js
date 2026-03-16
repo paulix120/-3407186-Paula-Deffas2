@@ -1,48 +1,23 @@
 // ============================================
 // PROYECTO SEMANA 04: Generador de Mensajes
 // ============================================
-//
-// 🎯 OBJETIVO: Construir un generador de mensajes
-//    en consola usando métodos de string y
-//    template literals.
-//
-// 📋 TU DOMINIO: Adapta cada TODO al dominio
-//    que te fue asignado por el instructor.
-//
-// ⚠️  POLÍTICA ANTICOPIA: Tu implementación debe
-//    ser única y coherente con tu dominio.
-//    Usa dominios no asignables como referencia
-//    conceptual, pero NO copies valores.
-//
-// ============================================
 
 // ============================================
 // SECCIÓN 1: Datos del dominio
 // ============================================
 
-// TODO: Define el nombre de tu dominio
-const DOMAIN_NAME = "Mi Dominio";
+const DOMAIN_NAME = "Sistema de Biblioteca Digital";
 
-// TODO: Define el nombre de la entidad principal
-// Inclúyelo con espacios y mayúsculas/minúsculas
-// para poder aplicar transformaciones después
-const rawEntityName = "  nombre de la entidad  ";
+const rawEntityName = "  Don Quijote de la Mancha  ";
 
-// TODO: Define una categoría o tipo (string)
-const entityCategory = "Categoría del elemento";
+const entityCategory = "Novela clásica";
 
-// TODO: Define un código identificador (string)
-// Elige un prefijo coherente con tu dominio
-const entityCode = "COD-001";
+const entityCode = "LIB-002";
 
-// TODO: Define una descripción corta (string)
-// Debe contener varias palabras para usar includes/slice
-const entityDescription = "Descripción interesante de la entidad del dominio asignado.";
+const entityDescription = "Obra clásica disponible en la biblioteca digital para lectura y préstamo.";
 
-// TODO: Define un dato numérico relevante (number)
-const mainValue = 0;
+const mainValue = 4200;
 
-// TODO: Define un estado booleano
 const isActive = true;
 
 
