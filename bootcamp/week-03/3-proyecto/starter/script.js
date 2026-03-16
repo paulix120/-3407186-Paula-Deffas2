@@ -1,82 +1,111 @@
 // ============================================
 // PROYECTO SEMANA 03: Calculadora de Dominio
 // ============================================
-// Adapta este archivo a tu dominio asignado.
-//
-// Ejemplos con dominios no asignables:
-// - Planetario    → calcular ingresos por función, capacidad disponible
-// - Acuario       → calcular costo de alimentación, volumen total de tanques
-// - Museo         → calcular valor de exhibición, costo de entrada
-// - Zoológico     → calcular gasto diario por especie, total de visitantes
-// - Observatorio  → calcular duración total de eventos, aforo restante
-// ============================================
 
 // ============================================
 // SECCIÓN 1: Datos del dominio
 // ============================================
 
-// TODO: Define las constantes base de tu dominio
-// Ejemplos con dominios no asignables:
-//   Planetario:   TICKET_PRICE = 12_000, MAX_CAPACITY = 45
-//   Acuario:      DAILY_FEEDING_KG = 150, ENTRY_PRICE = 35_000
-//   Museo:        ADULT_TICKET = 20_000, GUIDED_TOUR = 15_000
-//   Zoológico:    FOOD_COST_PER_DAY = 500_000, MAX_VISITORS = 800
-//   Observatorio: SESSION_DURATION = 90, TICKET_PRICE = 18_000
+// Precio de multa por día de retraso
 
-// const EXAMPLE_CONSTANT = 0; // TODO: Reemplazar con tus constantes
+const FINE_PER_DAY = 2_000;
+
+// Número máximo de préstamos permitidos
+const MAX_LOANS = 3;
+//maximo de descargas digitales por día
+const MAX_DAILY_DOWNLOADS = 3;
+// Duración máxima de un préstamo en días
+const LOAN_DAYS = 15;
+// Edad mínima para registrarse como usuario
+const MIN_USER_AGE = 12;
+
+console.log("Multa por día:", FINE_PER_DAY);
+console.log("Máximo de préstamos:", MAX_LOANS);
+console.log("Máximo de descargas diarias:", MAX_DAILY_DOWNLOADS);
+console.log("Días máximos de préstamo:", LOAN_DAYS);
+console.log("Edad mínima de usuario:", MIN_USER_AGE);
+
 
 // ============================================
 // SECCIÓN 2: Operaciones aritméticas
 // ============================================
 console.log("=== Operaciones básicas ===");
 
-// TODO: Calcula totales, subtotales o valores clave de tu dominio
-// Usa: +, -, *, /, %, **
-// Etiqueta cada resultado con console.log()
+// Ejemplo: usuario tomó 2 préstamos
+const borrowedBooks = 2;
 
-// Ejemplo con dominio Planetario (NO copiar):
-// const ticketPrice = 12_000;
-// const attendees = 38;
-// const totalRevenue = ticketPrice * attendees;
-// console.log("Ingresos función:", totalRevenue);
-// const remainingSeats = 45 - attendees;
-// console.log("Asientos disponibles:", remainingSeats);
+// Restar
+const remainingLoans = MAX_LOANS - borrowedBooks;
+console.log("Préstamos restantes:", remainingLoans);
 
-console.log("");
+// Multiplicar (multa por retraso)
+const daysLate = 4;
+const totalFine = FINE_PER_DAY * daysLate;
+console.log("Multa total por retraso:", totalFine);
+
+// Sumar (descargas del día) 
+const morningDownloads = 1;
+const afternoonDownloads = 1;
+const totalDownloads = morningDownloads + afternoonDownloads;
+console.log("Descargas totales hoy:", totalDownloads);
 
 // ============================================
 // SECCIÓN 3: Asignación compuesta
 // ============================================
 console.log("=== Asignación compuesta ===");
 
-// TODO: Usa +=, -=, *=, /= para actualizar valores acumulados
-// Muestra el valor antes y después de cada operación
+// dinero acumulado en multas
+let totalFines = 0;
 
-// Ejemplo (NO copiar):
-// let runningTotal = 0;
-// runningTotal += 25_000;
-// console.log("Tras primer item:", runningTotal);
-// runningTotal += 18_000;
-// console.log("Tras segundo item:", runningTotal);
-// runningTotal *= 0.90; // descuento del 10%
-// console.log("Con descuento:", runningTotal);
+console.log("Multas iniciales:", totalFines);
 
-console.log("");
+// llega una multa por 2 días tarde
+totalFines += FINE_PER_DAY * 2;
+console.log("Después de primera multa:", totalFines);
 
+// llega otra multa por 1 día tarde
+totalFines += FINE_PER_DAY * 1;
+console.log("Después de segunda multa:", totalFines);
+
+// se perdona parte de la multa (se resta)
+totalFines -= 1000;
+console.log("Después de descuento:", totalFines);
+
+// se aplica recargo del sistema (multiplicación)
+totalFines *= 2;
+console.log("Después de recargo:", totalFines);
+
+// se divide para calcular promedio entre usuarios
+totalFines /= 2;
+console.log("Promedio final de multas:", totalFines);
+// ============================================
+// SECCIÓN 4: Comparación estricta
+// ============================================
 // ============================================
 // SECCIÓN 4: Comparación estricta
 // ============================================
 console.log("=== Validaciones con === ===");
 
-// TODO: Valida condiciones usando === y operadores de orden
-// NUNCA uses == (penalización en la rúbrica)
+// días de retraso de un usuario
+const DaysLate = 2;
 
-// Ejemplo (NO copiar):
-// const daysLate = 5;
-// const isOnTime = daysLate === 0;
-// console.log("¿Entregado a tiempo?", isOnTime);
-// const hasFine = daysLate > 0;
-// console.log("¿Tiene multa?", hasFine);
+// verificar si el libro se entregó a tiempo
+const isOnTime = DaysLate === 0;
+console.log("¿Libro entregado a tiempo?", isOnTime);
+
+// verificar si hay multa
+const hasFine = DaysLate > 0;
+console.log("¿El usuario tiene multa?", hasFine);
+
+// verificar si alcanzó el máximo de préstamos
+const BorrowedBooks = 3;
+const reachedLoanLimit = BorrowedBooks === MAX_LOANS;
+console.log("¿Alcanzó el límite de préstamos?", reachedLoanLimit);
+
+// verificar si un usuario tiene edad suficiente
+const userAge = 14;
+const canRegister = userAge >= MIN_USER_AGE;
+console.log("¿Puede registrarse en la biblioteca?", canRegister);
 
 console.log("");
 
@@ -85,23 +114,37 @@ console.log("");
 // ============================================
 console.log("=== Condiciones lógicas ===");
 
-// TODO: Combina condiciones con &&, ||, !
-// Al menos una condición con && y una con ||
+// usuario actual
+const UserAge = 15;
+const borrowedbooks = 2;
+const downloadsToday = 1;
 
-// Ejemplo (NO copiar):
-// const isMember = true;
-// const purchaseAmount = 150_000;
-// const qualifiesForDiscount = isMember && purchaseAmount >= 100_000;
-// console.log("¿Descuento aplicable?", qualifiesForDiscount);
+// condición con &&
+const canBorrowBook = UserAge >= MIN_USER_AGE && borrowedbooks < MAX_LOANS;
+console.log("¿Puede pedir un libro?", canBorrowBook);
+
+// condición con ||
+const canDownload = downloadsToday < MAX_DAILY_DOWNLOADS || borrowedbooks < MAX_LOANS;
+console.log("¿Puede descargar un libro?", canDownload);
+
+// condición con !
+const isMinor = !(UserAge >= MIN_USER_AGE);
+console.log("¿Es menor que la edad mínima?", isMinor);
+
+console.log("");
 
 console.log("");
 
 // ============================================
 // SECCIÓN 6: Resumen final
 // ============================================
+
 console.log("=== Resumen ===");
 
-// TODO: Muestra un resumen con los valores más importantes
-// calculados en las secciones anteriores
+console.log("Multa total calculada:", totalFine);
+console.log("Descargas totales hoy:", totalDownloads);
+console.log("Préstamos restantes del usuario:", remainingLoans);
+console.log("¿Puede pedir un libro?:", canBorrowBook);
+console.log("¿Puede descargar un libro?:", canDownload);
 
 console.log("");
