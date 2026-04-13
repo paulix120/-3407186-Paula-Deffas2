@@ -1,225 +1,216 @@
 // ============================================
-// PROYECTO INTEGRADOR — ETAPA 0
-// Semana 10 — JavaScript ES2023 Bootcamp
-// ============================================
-//
-// INSTRUCCIONES:
-// 1. Reemplaza DOMAIN_NAME y los datos de ejemplo con tu dominio asignado
-// 2. Implementa cada TODO siguiendo las instrucciones de los comentarios
-// 3. Ejecuta con: node 3-proyecto/starter/app.js
-// 4. Valida el checklist del README antes de entregar
-//
-// DOMINIO ASIGNADO: [completar con tu dominio]
+
+// Dominio: Biblioteca Digital
 // ============================================
 
 // ============================================
-// SECCIÓN 1: Configuración y Constantes (Semanas 01–02)
+// SECCIÓN 1: Configuración y Constantes
 // ============================================
 
-// TODO: Renombrar con el nombre de tu dominio (en inglés, UPPER_SNAKE_CASE)
-const DOMAIN_NAME = "Mi Aplicación";
-const VALUE_LABEL = "elementos";
-
-// TODO: Ajustar al límite razonable para tu dominio
-// Usa separadores numéricos (ES2021): 1_000, 10_000
+const DOMAIN_NAME = "DIGITAL_LIBRARY";
+const VALUE_LABEL = "libros";
 const MAX_ITEMS = 1_000;
 
 // ============================================
-// SECCIÓN 2: Datos — Array Principal (Semanas 01–02)
+// SECCIÓN 2: Datos — Array Principal
 // ============================================
 
-// TODO: Definir el array con MÍNIMO 6 objetos
-// Requisitos:
-// - Mínimo 5 propiedades por objeto (tipos mixtos)
-// - Al menos 1 propiedad numérica (para calcular estadísticas)
-// - Al menos 1 propiedad booleana (para filtrar activos/inactivos)
-// - Al menos 1 propiedad OPCIONAL (no todos los objetos la tienen)
-//
-// Nota para el aprendiz — Adaptaciones por dominio:
-// - Biblioteca:    { id, title, author, year, pages, available, notes? }
-// - Farmacia:      { id, name, price, stock, laboratory, active, prescription? }
-// - Gimnasio:      { id, name, memberType, fee, joinDate, active, plan? }
-// - Restaurante:   { id, name, category, price, calories, available, allergens? }
-// - Banco:         { id, owner, type, balance, rate, active, creditLimit? }
-
 const items = [
-  // TODO: Reemplazar con objetos de tu dominio
   {
     id: 1,
-    name: "Elemento 1",
-    value: 100,
-    active: true,
-    category: "tipo-a",
+    title: "El Principito",
+    author: "Antoine de Saint-Exupéry",
+    year: 1943,
+    pages: 96,
+    available: true,
+    genre: "Ficción",
   },
   {
     id: 2,
-    name: "Elemento 2",
-    value: 200,
-    active: true,
-    category: "tipo-b",
-    notes: "Propiedad opcional de ejemplo",
+    title: "Cien Años de Soledad",
+    author: "Gabriel García Márquez",
+    year: 1967,
+    pages: 417,
+    available: true,
+    genre: "Realismo mágico",
+    notes: "Obra icónica colombiana",
   },
   {
     id: 3,
-    name: "Elemento 3",
-    value: 150,
-    active: false,
-    category: "tipo-a",
+    title: "1984",
+    author: "George Orwell",
+    year: 1949,
+    pages: 328,
+    available: false,
+    genre: "Distopía",
   },
-  // TODO: Agregar al menos 3 objetos más (mínimo 6 en total)
+  {
+    id: 4,
+    title: "Don Quijote de la Mancha",
+    author: "Miguel de Cervantes",
+    year: 1605,
+    pages: 863,
+    available: true,
+    genre: "Clásico",
+  },
+  {
+    id: 5,
+    title: "La Odisea",
+    author: "Homero",
+    year: -700,
+    pages: 500,
+    available: false,
+    genre: "Épico",
+  },
+  {
+    id: 6,
+    title: "Clean Code",
+    author: "Robert C. Martin",
+    year: 2008,
+    pages: 464,
+    available: true,
+    genre: "Tecnología",
+    notes: "Recomendado para programadores",
+  },
 ];
 
 // ============================================
-// SECCIÓN 3: Funciones CRUD (Semanas 07–08)
+// SECCIÓN 3: Funciones CRUD
 // ============================================
 
-/**
- * Agrega un nuevo elemento al array principal
- * @param {Object} item - El elemento a agregar
- */
 const addItem = (item) => {
-  // TODO: Implementar
-  // 1. Verificar que no supere MAX_ITEMS (usar items.length)
-  // 2. Agregar el item al array con .push()
-  // 3. Mostrar confirmación con console.log y template literal
+  if (items.length >= MAX_ITEMS) {
+    console.log("❌ No se pueden agregar más libros");
+    return;
+  }
+  items.push(item);
+  console.log(`✅ Libro agregado: ${item.title}`);
 };
 
-/**
- * Busca un elemento por su id
- * @param {number} id - El id a buscar
- * @returns {Object|undefined} - El elemento encontrado o undefined
- */
 const findById = (id) => {
-  // TODO: Implementar usando .find()
-  return null;
+  return items.find((item) => item.id === id);
 };
 
-/**
- * Retorna todos los elementos activos
- * @returns {Object[]}
- */
 const getActive = () => {
-  // TODO: Implementar usando .filter() con la propiedad booleana
-  return [];
+  return items.filter((item) => item.available);
 };
 
-/**
- * Filtra elementos por el valor de un campo
- * @param {string} field - El nombre de la propiedad
- * @param {*} value - El valor a buscar
- * @returns {Object[]}
- */
 const filterByField = (field, value) => {
-  // TODO: Implementar usando .filter()
-  return [];
+  return items.filter((item) => item[field] === value);
 };
 
 // ============================================
-// SECCIÓN 4: Funciones de Análisis (Semanas 08–09)
+// SECCIÓN 4: Funciones de Análisis
 // ============================================
 
-/**
- * Actualiza un elemento de forma inmutable usando spread
- * @param {number} id - Id del elemento a actualizar
- * @param {Object} changes - Objeto con los cambios a aplicar
- * @returns {Object[]} - Nuevo array con el elemento actualizado
- */
 const updateItem = (id, changes) => {
-  // TODO: Implementar
-  // 1. Usar .map() para crear un nuevo array
-  // 2. Para el item con el id buscado: retornar { ...item, ...changes }
-  // 3. Para los demás: retornar el item sin cambios
-  return items.map((item) => item); // reemplazar esta línea
+  return items.map((item) =>
+    item.id === id ? { ...item, ...changes } : item
+  );
 };
 
-/**
- * Calcula estadísticas de un campo numérico
- * @param {string} field - El nombre de la propiedad numérica
- * @returns {{ min: number, max: number, avg: number, total: number }}
- */
 const calculateStats = (field) => {
-  // TODO: Implementar
-  // 1. Extraer los valores numéricos con Object.values o .map()
-  // 2. Calcular: min (Math.min), max (Math.max), avg (sum/length), total (sum)
-  // Pista: const values = items.map(i => i[field]);
-  return { min: 0, max: 0, avg: 0, total: 0 };
+  const values = items.map((i) => i[field]);
+
+  const total = values.reduce((acc, val) => acc + val, 0);
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const avg = total / values.length;
+
+  return { min, max, avg, total };
 };
 
 // ============================================
-// SECCIÓN 5: Funciones de Display (Semanas 04–07)
+// SECCIÓN 5: Funciones de Display
 // ============================================
 
-/**
- * Formatea un elemento para mostrar en consola (una línea)
- * @param {Object} item - El elemento a formatear
- * @returns {string}
- */
 const formatItem = (item) => {
-  // TODO: Implementar usando template literals
-  // 1. Usar .padEnd() o .padStart() para alinear columnas
-  // 2. Usar ?? y ?. para propiedades opcionales
-  // 3. Retornar string (NO hacer console.log aquí)
-  return `[${item.id}] ${item.name}`;
+  return `[${item.id.toString().padEnd(3)}] 
+${item.title.padEnd(25)} 
+${item.author.padEnd(20)} 
+Año: ${item.year.toString().padEnd(6)} 
+Páginas: ${item.pages.toString().padEnd(5)} 
+Estado: ${(item.available ? "Disponible" : "Prestado").padEnd(12)} 
+Notas: ${item.notes ?? "N/A"}`;
 };
 
-/**
- * Genera el reporte completo del dominio
- * Usa: Object.entries, forEach, filter, map, calculateStats
- */
 const buildReport = () => {
-  // TODO: Implementar
-  // 1. Cabecera: título del dominio con template literal
-  // 2. Listado completo usando formatItem + forEach
-  // 3. Sección de activos vs inactivos (getActive)
-  // 4. Estadísticas con calculateStats para la propiedad numérica
-  // 5. Propiedades del primer elemento con Object.entries
-  // 6. Pie de reporte con conteo total
-  console.log(`Reporte de ${DOMAIN_NAME}`);
-  console.log("=".repeat(40));
+  console.log(`\n📚 REPORTE DE ${DOMAIN_NAME}`);
+  console.log("=".repeat(50));
+
+  // listado
   items.forEach((item) => console.log(formatItem(item)));
+
+  console.log("\n--- ESTADO ---");
+  const active = getActive();
+  console.log(`Disponibles: ${active.length}`);
+  console.log(`Prestados: ${items.length - active.length}`);
+
+  console.log("\n--- ESTADÍSTICAS (PÁGINAS) ---");
+  const stats = calculateStats("pages");
+  console.log(
+    `Min: ${stats.min} | Max: ${stats.max} | Promedio: ${stats.avg.toFixed(
+      2
+    )}`
+  );
+
+  console.log("\n--- PROPIEDADES DEL PRIMER LIBRO ---");
+  Object.entries(items[0]).forEach(([key, value]) => {
+    console.log(`${key}: ${value}`);
+  });
+
+  console.log("\n" + "=".repeat(50));
+  console.log(`Total de ${VALUE_LABEL}: ${items.length}`);
 };
 
 // ============================================
 // SECCIÓN 6: Ejecución Principal
 // ============================================
-//
-// TODO: Descomentar a medida que implementes cada función
-//
 
 console.log("=".repeat(40));
-console.log(`  ${DOMAIN_NAME.toUpperCase()}`);
+console.log(`  ${DOMAIN_NAME}`);
 console.log("=".repeat(40));
 console.log(`Total de ${VALUE_LABEL}: ${items.length} / ${MAX_ITEMS}`);
 console.log("");
 
-// Paso 1: Buscar por id
-// const found = findById(1);
-// console.log("Encontrado id=1:", found?.name ?? "no encontrado");
-// console.log("");
+// PRUEBAS
 
-// Paso 2: Listar activos
-// const active = getActive();
-// console.log(`Activos: ${active.length}`);
-// active.forEach(item => console.log(" ", formatItem(item)));
-// console.log("");
+const found = findById(1);
+console.log("Encontrado id=1:", found?.title ?? "no encontrado");
+console.log("");
 
-// Paso 3: Filtrar por campo
-// const filtered = filterByField("category", "tipo-a");
-// console.log(`Filtro category=tipo-a: ${filtered.length} resultados`);
-// console.log("");
+const active = getActive();
+console.log(`Disponibles: ${active.length}`);
+active.forEach((item) => console.log(" ", formatItem(item)));
+console.log("");
 
-// Paso 4: Actualizar con spread
-// const updated = updateItem(1, { value: 999 });
-// console.log(`Actualizado id=1: value=${updated.find(i => i.id === 1)?.value}`);
-// console.log("");
+const filtered = filterByField("genre", "Ficción");
+console.log(`Filtro genre=Ficción: ${filtered.length} resultados`);
+console.log("");
 
-// Paso 5: Estadísticas
-// const stats = calculateStats("value");
-// console.log(`Estadísticas (value): min=${stats.min} max=${stats.max} avg=${stats.avg.toFixed(2)}`);
-// console.log("");
+const updated = updateItem(1, { pages: 120 });
+console.log(
+  `Actualizado id=1: páginas=${updated.find((i) => i.id === 1)?.pages}`
+);
+console.log("");
 
-// Paso 6: Reporte completo
-// buildReport();
+const stats = calculateStats("pages");
+console.log(
+  `Estadísticas: min=${stats.min} max=${stats.max} avg=${stats.avg.toFixed(
+    2
+  )}`
+);
+console.log("");
 
-// TODO: Agregar un nuevo elemento usando addItem
-// addItem({ id: 7, name: "Nuevo elemento", value: 300, active: true, category: "tipo-a" });
+buildReport();
+
+// agregar nuevo libro
+addItem({
+  id: 7,
+  title: "Sempiterno",
+  author: "Johana Marcus",
+  year: 2024,
+  pages: 550,
+  available: true,
+  genre: "Ficción",
+});
